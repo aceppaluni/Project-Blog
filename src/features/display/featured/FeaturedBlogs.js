@@ -18,7 +18,7 @@ const FeaturedBlogs = () => {
     return  (
       <Row>
         {featuredBlogs.map((blog) => (
-          <Col key={blog.id} >
+          <Col key={blog.id} md>
               <FeaturedBlog blog={blog} />
           </Col>
         ))}

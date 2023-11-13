@@ -16,7 +16,7 @@ const BlogsList = () => {
         <Container>
             {allBlogs.map((blog) => {
                 return (
-                    <Row key={blog.id} style={{height: "15%"}}>
+                    <Row key={blog.id}>
                         <Blog blog={blog}/>
                     </Row>
                 )

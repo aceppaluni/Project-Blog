@@ -115,8 +115,8 @@ h2 {
   word-wrap: break-word;
   word-break: break-word;
   text-align: left;
-  margin-right: auto;
-  margin-left: 320px;
+  margin-right: 30%;
+  margin-left: 30%;
 }
 .feature-img {
   width: 75%;

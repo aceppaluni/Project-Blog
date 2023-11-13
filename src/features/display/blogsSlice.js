@@ -27,17 +27,17 @@ export const selectFeaturedBlog = (state)  => { // review again later
 
 }
 
-export const fetchBlogs = createAsyncThunk(
-    'blogs/fetchBlogs',
-    async () => {
-        const response = await fetch(baseUrl + 'blogs');
-        if(!response.ok) {
-            return Promise.reject('Unable to fetch response, status: ', response.status)
-        }
-        const data = await response.json()
-        return data 
-    }
-)
+// export const fetchBlogs = createAsyncThunk(
+//     'blogs/fetchBlogs',
+//     async () => {
+//         const response = await fetch(baseUrl + 'blogs');
+//         if(!response.ok) {
+//             return Promise.reject('Unable to fetch response, status: ', response.status)
+//         }
+//         const data = await response.json()
+//         return data 
+//     }
+// )
 
 //below code using axios 
 

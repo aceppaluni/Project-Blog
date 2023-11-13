@@ -13,7 +13,7 @@ const Blog = ({blog}) => {
             <div className="d-fex">
                 <h3>{title}</h3>
                 <h4>{date}</h4>
-                <h4>{tags}</h4>
+                <h4>{tags.join(', ')}</h4>
                 <p className="text-break">{entry}</p>
             </div>
         </div>
