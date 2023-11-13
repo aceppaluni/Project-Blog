@@ -27,33 +27,33 @@ export const selectFeaturedBlog = (state)  => { // review again later
 
 }
 
-// export const fetchBlogs = createAsyncThunk(
-//     'blogs/fetchBlogs',
-//     async () => {
-//         const response = await fetch(baseUrl + 'blogs');
-//         if(!response.ok) {
-//             return Promise.reject('Unable to fetch response, status: ', response.status)
-//         }
-//         const data = await response.json()
-//         return data 
-//     }
-// )
+export const fetchBlogs = createAsyncThunk(
+    'blogs/fetchBlogs',
+    async () => {
+        const response = await fetch(baseUrl + 'blogs');
+        if(!response.ok) {
+            return Promise.reject('Unable to fetch response, status: ', response.status)
+        }
+        const data = await response.json()
+        return data 
+    }
+)
 
 //below code using axios 
 
-export const postBlog = createAsyncThunk(
-    'blogs/fetchBlogs',
-    async () => {
-        try {
-            const r = axios.post(baseUrl + 'blogs', blog, {
-                headers: {'Content-Type': 'application/json'}
-            })
-            dispatch(addBlog(r.data))
-        } catch (error) {
-            return Promise.reject(`Failed to fetch: ${error.message}`)
-        }
-    }
-)
+// export const postBlog = createAsyncThunk(
+//     'blogs/fetchBlogs',
+//     async () => {
+//         try {
+//             const r = axios.post(baseUrl + 'blogs', blog, {
+//                 headers: {'Content-Type': 'application/json'}
+//             })
+//             dispatch(addBlog(r.data))
+//         } catch (error) {
+//             return Promise.reject(`Failed to fetch: ${error.message}`)
+//         }
+//     }
+// )
 
 // export const initialState = {
 //     blogsArray: BLOGS,
