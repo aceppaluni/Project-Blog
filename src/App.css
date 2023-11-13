@@ -1,0 +1,124 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-float infinite 3s ease-in-out;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: rgb(112, 76, 182);
+}
+
+@keyframes App-logo-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+} */
+* {
+  box-sizing: border-box;
+}
+.navbar-brand {
+  max-width: 4rem;
+  margin-right: 2rem; 
+}
+
+.navbar-brand img {
+  width: 100%;
+  height: 100%;
+  margin-right: 2rem;
+  max-width: 4rem;
+}
+.navbar-dark {
+  min-height: 8rem;
+  margin-bottom: 2rem;
+  background-image: linear-gradient(to right, rgb(50, 136, 139),rgb(170, 121, 57),rgb(158, 85, 58) );
+}
+.site-footer {
+  background-color: rgb(170, 121, 57);
+  color: white;
+  padding: 15px 5px;
+  margin-top: 10%;
+  
+}
+.about-text {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 26px;
+  font-style: italic;
+}
+.creator-img {
+  max-width: 60%;
+  padding: 8px;
+  box-sizing: inherit;
+}
+.form-page {
+  max-width: 400px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  margin-bottom: 300px;
+}
+.login {
+  margin-top: 60px
+}
+input {
+  display: block;
+  margin-bottom: 5px;
+  width: 100%;
+  padding: 5px 7xp;
+  border-radius: 5px;
+  border: 1 solid #ddd;
+  background-color: #fff;
+
+}
+.card-image {
+  max-width: 50%;
+}
+button {
+  width: 100%;
+  display: block;
+  background-color: rgb(170, 121, 57);
+  border: 0;
+  border-radius: 5px;
+  padding: 7px 0;
+
+}
+h2 {
+  color: rgb(44, 130, 154);
+}
+.blog-img {
+  float: left;
+  margin-right: 5%;
+}
+.text-break {
+  word-wrap: break-word;
+  word-break: break-word;
+  text-align: left;
+  margin-right: auto;
+  margin-left: 320px;
+}
+.feature-img {
+  width: 75%;
+  height: 270px;
+}
