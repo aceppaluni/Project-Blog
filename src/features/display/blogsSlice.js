@@ -27,6 +27,8 @@ export const selectFeaturedBlog = (state)  => { // review again later
 
 }
 
+
+
 // export const fetchBlogs = createAsyncThunk(
 //     'blogs/fetchBlogs',
 //     async () => {
@@ -94,3 +96,4 @@ export const selectFeaturedBlog = (state)  => { // review again later
 //         errMsg: state.blogs.errMsg
 //     }
 // }
+
