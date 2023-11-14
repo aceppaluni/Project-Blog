@@ -43,5 +43,3 @@ const Header = () => {
     )
 }
 export default Header
-
-// fixing footer color link
