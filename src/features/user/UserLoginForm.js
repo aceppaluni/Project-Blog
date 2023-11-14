@@ -3,8 +3,7 @@ import {useSelector, useDispatch } from 'react-redux';
 import {setCurrentUser, selectCurrentUser} from './userSlice';
 import {Modal, ModalHeader, ModalBody, FormGroup, Label, Button} from 'reactstrap';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
-//import defaultAvatar from '../../app/assets/unicorn.png'
-import defaultAvatar from '../../app/assets/unicorn.png';
+import defaultAvatar from '../../app/assets/unicorn.png'
 //import mainAvatar from '../../app/assets/unicorn.png';
 import validateUserLogin from '../../utils/validateUserLogin';
 
@@ -15,7 +14,7 @@ const UserLoginForm = () => {
 
     const dispatch = useDispatch()
 
-    function handelLogin (values) {
+    function handelLogin (values){
         const currentUser = {
             id: Date.now(),
             avatar: defaultAvatar,
