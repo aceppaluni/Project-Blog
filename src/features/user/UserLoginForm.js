@@ -3,8 +3,9 @@ import {useSelector, useDispatch } from 'react-redux';
 import {setCurrentUser, selectCurrentUser} from './userSlice';
 import {Modal, ModalHeader, ModalBody, FormGroup, Label, Button} from 'reactstrap';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
-import defaultAvatar from '../../app/assets/unicorn.png'
+//import defaultAvatar from "../../app/assets/unicorn.png";
 //import mainAvatar from '../../app/assets/unicorn.png';
+import avatarOne from '../../app/assets/unicorn.png'
 import validateUserLogin from '../../utils/validateUserLogin';
 
 const UserLoginForm = () => {
@@ -17,11 +18,11 @@ const UserLoginForm = () => {
     function handelLogin (values){
         const currentUser = {
             id: Date.now(),
-            avatar: defaultAvatar,
+            avatar: avatarOne,
             username: values.username,
             password: values.password,
         }
-
+        alert('User signed in')
         dispatch(setCurrentUser(currentUser))
 
         setLoginModalOpen(false)
@@ -39,15 +40,14 @@ const UserLoginForm = () => {
                         <i className='fa fa-sign-in fa-lg'/> login
                     </Button>
                 )}
+                {/* <div style={{ width: '4rem', height: '4rem' }}>
+                    <img src={currentUser.avatar} alt={'user'} style={{ width: '100%', height: '100%' }} />
+                </div> */}
             </span>
             <Modal isOpen={loginModalOpen}>
                 <ModalHeader toggle={() => setLoginModalOpen(false)}>Login</ModalHeader>
                 <ModalBody>
-                    <Formik 
-                    initialValues={{username: '', password: ''}}
-                    onSubmit={handelLogin}
-                    validate={validateUserLogin}
-                    >
+                    <Formik initialValues={{username: '', password: ''}} onSubmit={handelLogin} validate={validateUserLogin}>
                         <Form>
                             <FormGroup>
                                 <Label htmlFor='username'>Username</Label>

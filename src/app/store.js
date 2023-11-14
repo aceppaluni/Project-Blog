@@ -5,7 +5,6 @@ import logger from 'redux-logger';
 import { userReducer } from '../features/user/userSlice';
 
 
-
 export const store = configureStore({
   reducer: {
     counter: counterReducer,
@@ -14,3 +13,4 @@ export const store = configureStore({
   },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat([logger])
 });
+
