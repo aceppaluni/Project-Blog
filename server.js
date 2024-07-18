@@ -35,7 +35,7 @@ router.get('/', async (req, res) => {
 
 // CONNECT EXPRESS AND MONGODB
 //const mongoose = require('mongoose')
-mongoose.connect('mongodb://aceppaluni:QmmITdwWGXAI7U8B@ac-g5pzhzc-shard-00-00.csqifsm.mongodb.net:27017,ac-g5pzhzc-shard-00-01.csqifsm.mongodb.net:27017,ac-g5pzhzc-shard-00-02.csqifsm.mongodb.net:27017/?replicaSet=atlas-oqireh-shard-0&ssl=true&authSource=admin', {})
+mongoose.connect('mongodb://localhost:27017/blogs', {})
 
 const port = 3000
 
