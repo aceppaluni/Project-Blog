@@ -1,11 +1,12 @@
 import {Col} from 'reactstrap';
+import React from 'react';
 
-export default Error = ({errMsg}) => {
+const Error = ({errMsg}) => {
     return (
         <Col>
             <h4>{errMsg}</h4>
         </Col>
     )
-}
+};
 
-//export default Error 
+export default Error;
